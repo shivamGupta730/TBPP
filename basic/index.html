@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="font-sans bg-gray-100">
+
+    <nav class="bg-white fixed w-full z-10 shadow ">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold">MY <span class="hidden md:inline">WEBSITE</span> LOGO</span>
+                </div>
+                <div class="hidden md:flex space-x-4">
+                    <a href="#home" class="py-2 px-4 hover:bg-gray-200 rounded">HOME</a>
+                    <a href="#about" class="py-2 px-4 hover:bg-gray-200 rounded">ABOUT</a>
+                    <a href="#portfolio" class="py-2 px-4 hover:bg-gray-200 rounded">PORTFOLIO</a>
+                    <a href="#contact" class="py-2 px-4 hover:bg-gray-200 rounded">CONTACT</a>
+                    <a href="#" class="py-2 px-4 hover:bg-gray-200 rounded">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </div>
+                <button class="md:hidden flex items-center" onclick="toggleFunction()">
+                    <i class="fa fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="navDemo" class="hidden md:hidden bg-white">
+            <a href="#about" class="block py-2 px-4 hover:bg-gray-200" onclick="toggleFunction()">ABOUT</a>
+            <a href="#portfolio" class="block py-2 px-4 hover:bg-gray-200" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#contact" class="block py-2 px-4 hover:bg-gray-200" onclick="toggleFunction()">CONTACT</a>
+        </div>
+    </nav>
+
+    <div class="bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');">
+        <span class="text-4xl text-white font-bold">MY <span class="hidden md:inline">WEBSITE</span> LOGO</span>
+    </div>
+
+    <div class="max-w-7xl mx-auto py-16 px-4" id="about">
+        <h3 class="text-3xl text-center font-semibold">ABOUT ME</h3>
+        <p class="text-center text-lg italic">I love photography</p>
+        <p class="mt-4">We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+        </p>
+        
+        <div class="flex flex-col md:flex-row mt-8">
+            <div class="md:w-1/2 text-center">
+                <p class="font-bold"><i class="fa fa-user mr-2"></i>My Name</p>
+                <img src="https://www.w3schools.com/w3images/avatar_hat.jpg" class=" w-64 mx-auto" alt="Photo of Me">
+            </div>
+            <div class="md:w-1/2 md:pl-8 mt-4 md:mt-0">
+                <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+        
+        <p class="text-xl text-center mt-5">I'm really good at:</p>
+        <div class="mt-5">
+            <p class="flex justify-between mt-5"><span><i class="fa fa-camera"></i>Photography</span><span>90%</span></p>
+            <div class="bg-gray-300 h-3.5 w-full">
+                <div class="bg-black h-3.5 " style="width:90%"></div>
+            </div>
+            <p class="flex justify-between mt-5"><span><i class="fa fa-laptop"></i>Web Design</span><span>85%</span></p>
+            <div class="bg-gray-300  h-3.5 w-full">
+                <div class="bg-black h-3.5 " style="width:85%"></div>
+            </div>
+            <p class="flex justify-between mt-2"><span><i class="fa fa-photo"></i>Photoshop</span><span>75%</span></p>
+            <div class="bg-gray-300  h-3.5 w-full">
+                <div class="bg-black h-3.5 " style="width:75%"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gray-800 text-white py-16 text-center">
+        <div class="flex justify-around">
+            <div>
+                <span class="text-3xl">14+</span><br>Partners
+            </div>
+            <div>
+                <span class="text-3xl">55+</span><br>Projects Done
+            </div>
+            <div>
+                <span class="text-3xl">89+</span><br>Happy Clients
+            </div>
+            <div>
+                <span class="text-3xl">150+</span><br>Meetings
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('https://www.w3schools.com/w3images/photographer.jpg');">
+        <span class="text-4xl text-white font-bold">PORTFOLIO</span>
+    </div>
+
+    <div class="max-w-7xl mx-auto py-16 px-4" id="portfolio">
+        <h3 class="text-3xl text-center font-semibold">MY WORK</h3>
+        <p class="text-center italic">Here are some of my latest lorem work ipsum tipsum. Click on the images to make them bigger</p>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+            <img src="https://www.w3schools.com/w3images/p1.jpg" class="w-full h-auto cursor-pointer hover:opacity-75" onclick="onClick(this)" alt="The mist over the mountains">
+            <img src="https://www.w3schools.com/w3images/p2.jpg" class="w-full h-auto cursor-pointer hover:opacity-75" onclick="onClick(this)" alt="Coffee beans">
+            <img src="https://www.w3schools.com/w3images/p3.jpg" class="w-full h-auto cursor-pointer hover:opacity-75" onclick="onClick(this)" alt="Bear closeup">
+            <img src="https://www.w3schools.com/w3images/p4.jpg" class="w-full h-auto cursor-pointer hover:opacity-75" onclick="onClick(this)" alt="Quiet ocean">
+            <img src="https://www.w3schools.com/w3images/p7.jpg" class="w-full h-auto cursor-pointer hover:opacity-75" onclick="onClick(this)" alt="The mist">
+            <img src="https://www.w3schools.com/w3images/p6.jpg" class="w-full h-auto cursor-pointer hover:opacity-75" onclick="onClick(this)" alt="Colorful flowers">
+            <img src="https://www.w3schools.com/w3images/p5.jpg" class="w-full h-auto cursor-pointer hover:opacity-75" onclick="onClick(this)" alt="Lush forest">
+            <img src="https://www.w3schools.com/w3images/p8.jpg" class="w-full h-auto cursor-pointer hover:opacity-75" onclick="onClick(this)" alt="The sunset">
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto py-16 px-4" id="contact" style="text-align: center;">
+        <h3 class="text-3xl font-semibold">WHERE I WORK</h3>
+        <p class="italic">I'd love your feedback!</p>
+    
+        <!-- Image Section -->
+        <div class="flex justify-center mt-8">
+            <img src="https://via.placeholder.com/400x200.png?text=Aerial+View" alt="Aerial View" style="width: 400px; height: auto; border-radius: 5px;">
+        </div>
+    
+        Contact Information
+        <div class="flex justify-center mt-8 space-x-6">
+            <div class="text-center">
+                <i class="fa fa-map-marker text-3xl text-gray-600"></i>
+                <p>Chicago, US</p>
+            </div>
+            <div class="text-center">
+                <i class="fa fa-phone text-3xl text-gray-600"></i>
+                <p>+00 151515</p>
+            </div>
+            <div class="text-center">
+                <i class="fa fa-envelope text-3xl text-gray-600"></i>
+                <p>mail@mail.com</p>
+            </div>  
+        </div>
+    
+        <p class="mt-4">Swing by for a cup of ☕, or leave me a note:</p>
+    
+        <!-- Contact Form -->
+        <form action="https://www.w3schools.com/action_page.php" target="_blank" method="post" class="mt-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input class="w-full border rounded py-2 px-4" type="text" placeholder="Name" required name="Name">
+                <input class="w-full border rounded py-2 px-4" type="email" placeholder="Email" required name="Email">
+            </div>
+            <div class="mt-4">
+                <textarea class="w-full border rounded py-2 px-4" placeholder="Message" required name="Message"></textarea>
+            </div>
+            <button class="bg-black text-white py-2 px-4 rounded mt-4" type="submit">SEND MESSAGE</button>
+        </form>
+    </div>
+    
+    <footer class="bg-black text-white py-8 text-center">
+      <p>THANK YOU</p>
+    </footer>
+    
+</body>
+</html>
